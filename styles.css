@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --color-White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Button-Grey: #121417af;
+  --Dark-Blue: #252d37;
+  --Very-DarkBlue: #121417;
+  --color-orange: #cf711f;
+}
+
+/* GENERAL */
+body {
+  background: var(--Very-DarkBlue);
+  place-items: center;
+  color: var(--color-White);
+  font-family: "Inter", sans-serif;
+}
+p {
+  line-height: 1.6;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* FRONT PAGE */
+.container {
+  width: 20rem;
+  height: 23rem;
+  padding: 2rem;
+  margin: 6rem auto;
+  background-color: var(--Dark-Blue);
+  border-radius: 30px;
+}
+.front-img {
+  padding: 10px 10px;
+  background-color: var(--Button-Grey);
+  border-radius: 50%;
+}
+.front-heading {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.front-paragraph {
+  margin-bottom: 2rem;
+}
+.front-button-list {
+  margin-bottom: 2rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.button {
+  padding: 0.9rem 1.2rem;;
+  background: var(--Button-Grey);
+  border-radius: 50%;
+  border: 2px solid transparent;
+  color: var(--Light-Grey);
+  cursor: pointer;
+}
+.button:hover {
+  background: var(--color-orange);
+  color: var(--color-White);
+}
+.submit {
+  margin-bottom: 2rem;
+  width: 100%;
+  height: 2.2rem;
+  background: var(--color-orange);
+  color: var(--color-White);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: var(--color-White);
+  color: var(--color-orange);
+  border-color: 1px solid var(--color-orange);
+}
+
+/* BACK PAGE */
+.thank-you-box {
+  text-align: center;
+}
+.back-img {
+  margin-bottom: 2rem;
+}
+.rating-given {
+  color: var(--color-orange);
+  margin-bottom: 2rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: var(--Button-Grey);
+  border: 1px solid transparent;
+  border-radius: 30px;
+}
+
+/* HIDE */
+.hide {
+  display: none;
+}
+
+/* JAVASCRIPT MANIPUALTION COLOR CLASSES */
+.button-color {
+  background: var(--color-orange);
+  color: var(--color-White);
+}
+.button-color:hover {
+  background: var(--color-orange);
+  color: var(--color-White);
+}
+.button-animation {
+  background: var(--Medium-Grey);
+  color: var(--color-White);
+}
